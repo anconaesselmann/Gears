@@ -28,32 +28,35 @@ struct ContentView: View {
             dash: [],
             dashPhase: 0
         )
-        VStack {
-            Slider(value: $rotationSlider).padding([.leading, .trailing], 16)
-            Slider(value: $toothWidthSlider).padding([.leading, .trailing], 16)
-            Slider(value: $toothTipWidthPerchentOfRoot).padding([.leading, .trailing], 16)
-            Slider(value: $toothHeightSlider).padding([.leading, .trailing], 16)
-            Slider(value: $toothNumberSlider).padding([.leading, .trailing], 16)
-            Text("Number of teeth: \(toothNumber)")
-            ZStack(alignment: .center) {
-                GeometryReader { geometry in
-                    let center = geometry.frame(in: .local).center
-                    Gear(
-                        center: center,
-                        radius: 100,
-                        toothHeigh: toothHeight,
-                        toothWidth: toothWidthSlider,
-                        toothTipWidthPerchentOfRoot: toothTipWidthPerchentOfRoot,
-                        toothCount: toothNumber,
-                        rotate: .radians(rotationSlider * 2 * .pi)
-                    ).stroke(
-                        Color.black,
-                        style: style
-                    )
-                }.frame(width: 300, height: 300)
-                .background(Color.white)
-            }
-        }.statusBar(hidden: true)
+        ZStack {
+            Color.white
+            VStack {
+                Slider(value: $rotationSlider).padding([.leading, .trailing], 16)
+                Slider(value: $toothWidthSlider).padding([.leading, .trailing], 16)
+                Slider(value: $toothTipWidthPerchentOfRoot).padding([.leading, .trailing], 16)
+                Slider(value: $toothHeightSlider).padding([.leading, .trailing], 16)
+                Slider(value: $toothNumberSlider).padding([.leading, .trailing], 16)
+                Text("Number of teeth: \(toothNumber)")
+                ZStack(alignment: .center) {
+                    GeometryReader { geometry in
+                        let center = geometry.frame(in: .local).center
+                        Gear(
+                            center: center,
+                            radius: 100,
+                            toothHeigh: toothHeight,
+                            toothWidth: toothWidthSlider,
+                            toothTipWidthPerchentOfRoot: toothTipWidthPerchentOfRoot,
+                            toothCount: toothNumber,
+                            rotate: .radians(rotationSlider * 2 * .pi)
+                        ).stroke(
+                            Color.black,
+                            style: style
+                        )
+                    }.frame(width: 300, height: 300)
+                    .background(Color.white)
+                }
+            }.statusBar(hidden: true)
+        }
     }
 }
 
