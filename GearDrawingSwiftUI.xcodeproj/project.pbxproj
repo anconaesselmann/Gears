@@ -11,6 +11,8 @@
 		97DF8BA326F5170E0097DA39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF8BA226F5170E0097DA39 /* ContentView.swift */; };
 		97DF8BA526F517100097DA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97DF8BA426F517100097DA39 /* Assets.xcassets */; };
 		97DF8BA826F517100097DA39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97DF8BA726F517100097DA39 /* Preview Assets.xcassets */; };
+		97DF8BB026F5318D0097DA39 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF8BAF26F5318D0097DA39 /* Gear.swift */; };
+		97DF8BB226F532E00097DA39 /* CoreGraphics+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF8BB126F532E00097DA39 /* CoreGraphics+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		97DF8BA426F517100097DA39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97DF8BA726F517100097DA39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97DF8BA926F517100097DA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97DF8BAF26F5318D0097DA39 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
+		97DF8BB126F532E00097DA39 /* CoreGraphics+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				97DF8BA026F5170E0097DA39 /* GearDrawingSwiftUIApp.swift */,
 				97DF8BA226F5170E0097DA39 /* ContentView.swift */,
+				97DF8BAF26F5318D0097DA39 /* Gear.swift */,
+				97DF8BB126F532E00097DA39 /* CoreGraphics+Extensions.swift */,
 				97DF8BA426F517100097DA39 /* Assets.xcassets */,
 				97DF8BA926F517100097DA39 /* Info.plist */,
 				97DF8BA626F517100097DA39 /* Preview Content */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				97DF8BA326F5170E0097DA39 /* ContentView.swift in Sources */,
+				97DF8BB226F532E00097DA39 /* CoreGraphics+Extensions.swift in Sources */,
 				97DF8BA126F5170E0097DA39 /* GearDrawingSwiftUIApp.swift in Sources */,
+				97DF8BB026F5318D0097DA39 /* Gear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
